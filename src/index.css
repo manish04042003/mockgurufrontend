@@ -1,0 +1,676 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-color: #f7f8fa;
+}
+
+
+
+
+/* google fonts  */
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+.nointerviewcontainer{
+  max-width: 750px;
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.nointerviewcontainer p{
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+
+
+
+.logo{
+  text-decoration: none;
+
+}
+
+.logo h1{
+  font-size: 1.5rem !important;
+}
+
+
+.landingpagecontent{
+  height: calc(100vh -  80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.landingpagecontent div{
+
+}
+
+
+
+
+
+
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+p {
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+}
+
+
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #5272F2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #4059b8;
+}
+
+
+.thankyoupagediv{
+    text-align: center;
+    max-width: 1000px;
+    padding: 1rem;
+    margin: auto;
+}
+
+
+
+/* CSS */
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    rgb(0, 103, 238),
+    rgb(0, 103, 238) 8%,
+    rgb(0, 103, 238) 92%,
+    rgb(0, 103, 238) 100%
+  );
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: rgb(0, 103, 238);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+
+
+/* 15 */
+.custom-btn {
+  width: fit-content;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.custom-btn a{
+  text-decoration: none;
+  color: white;
+}
+.btn-15 {
+  background: #b621fe;
+  border: none;
+  z-index: 1;
+}
+.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #663dff;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.btn-15:hover {
+  color: #fff;
+}
+.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-15:active {
+  top: 2px;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  align-items: center; /* Adjust as needed */
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  background-color: white;
+
+  position: sticky;
+  top: 0;
+
+  /* height: 80px; */
+}
+
+.landingnav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  height: 80px;
+}
+.landingnav >div{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.dashboard-link {
+  padding: 10px;
+  text-decoration: none;
+  color: #5272F2; /* Adjust link color as needed */
+}
+
+/* Styling for the active link */
+.dashboard-link.active {
+  font-weight: bold; /* Example of making the active link bold */
+  /* You can add additional styles for the active link */
+}
+
+
+
+
+
+.bordernone input{
+  border: none;
+}
+
+
+
+.imagefit{
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+/* account css */
+.optionsforaccounts{
+  gap: 10px;
+  display: flex;
+  padding: 10px 10px;
+  background-color: gainsboro;
+}
+
+.flex-row{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.imageshow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  overflow: hidden;
+}
+.imageshow img{
+  width: 100%;
+}
+
+
+.openlink{
+  color: blue;
+  cursor: pointer;
+}
+
+
+.navbarbackbtn{
+  cursor: pointer;
+}
+.startnewinterview{
+  color: white;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: blue;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+
+/* loader css */
+
+
+/*
+ * Baseline styles
+ */
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.loaderDotes h2 {
+  color: Black;
+  margin: 0;
+  font: .8em verdana;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+/*
+ * Loading Dots
+ * Can we use pseudo elements here instead :after?
+ */
+.loaderDotes span {
+  display: inline-block;
+  vertical-align: middle;
+  width: .6em;
+  height: .6em;
+  margin: .19em;
+  background: #007DB6;
+  border-radius: .6em;
+  animation: loaderDotes 1s infinite alternate;
+}
+
+/*
+ * Dots Colors
+ * Smarter targeting vs nth-of-type?
+ */
+.loaderDotes span:nth-of-type(2) {
+  background: #008FB2;
+  animation-delay: 0.2s;
+}
+.loaderDotes span:nth-of-type(3) {
+  background: #009B9E;
+  animation-delay: 0.4s;
+}
+.loaderDotes span:nth-of-type(4) {
+  background: #00A77D;
+  animation-delay: 0.6s;
+}
+.loaderDotes span:nth-of-type(5) {
+  background: #00B247;
+  animation-delay: 0.8s;
+}
+.loaderDotes span:nth-of-type(6) {
+  background: #5AB027;
+  animation-delay: 1.0s;
+}
+.loaderDotes span:nth-of-type(7) {
+  background: #A0B61E;
+  animation-delay: 1.2s;
+}
+
+/*
+ * Animation keyframes
+ * Use transition opacity instead of keyframes?
+ */
+@keyframes loaderDotes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.audioloader{
+  text-align: center;
+}
+
+/*
+  Set the color of the icon
+*/
+.audioloader svg path,
+svg rect{
+  fill: #FF6700;
+}
+
+
+/* Next Question loader  */
+
+.Nextquestionloader svg path,
+.Nextquestionloader svg rect{
+  fill: white;
+}
+
+
+
+/* Question Box css */
+.questioncontainer {
+  background: #f0f0f0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vh - 80px);
+}
+.questionbox {
+  border-radius: 20px;
+  width: 85%;
+  max-width: 700px;
+  /* min-height: 240px; */
+  height: fit-content;
+  background: #fafafa;
+  box-shadow:  40px 40px 40px #cccccc,
+               0 0 0 #ffffff,
+               0 0 0 #cccccc inset,
+               2px 2px 2px #ffffff inset;
+  /* animation-fill-mode: forwards; */
+}
+.questionbox >div{
+  padding: 0 1rem;
+}
+.boxlabel{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  margin-bottom: 20px;
+}
+.questiondisplay{
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.translatetextbox{
+  /* margin-bottom: 1rem; */
+  padding: 1rem 1rem !important;
+  border-top: 1px solid black;
+}
+.btnrow{
+  height: 80px;
+  border-top: 1px solid black;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.actionbtn{
+  height: 50px;
+  width: 130px;
+  background-color: #1b6ef3;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.actionbtn span{
+  font-size: 26px;
+}
+.nextquestionbtn{
+  height: 50px;
+  width: 50px;
+  background-color: #1b6ef3;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+
+
