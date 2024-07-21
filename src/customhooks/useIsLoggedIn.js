@@ -18,7 +18,7 @@ function useIsLoggedIn() {
                 setloginstatevalue(false);
                 setLoding(false);
             } else {
-                const response = await fetch('http://localhost:3000/islogin', {
+                const response = await fetch('http://13.233.89.119:3000/islogin', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
