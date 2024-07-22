@@ -4,7 +4,7 @@ import "../viewreview.css"
 import useGet from '../../customhooks/useGet';
 const ViewReview = () => {
   const { interviewid } = useParams();
-  let allResponse = useGet(`http://13.233.89.119:3000/dashboard/getinterview/${interviewid}`);
+  let allResponse = useGet(`https://backendinterview-tqxz.onrender.com/dashboard/getinterview/${interviewid}`);
   console.log(allResponse);
   return (
     <div>

@@ -20,7 +20,7 @@ mic.lang = "en-US";
 
 function QuestionBox({ interview_id, question_id }) {
     const navigate = useNavigate();
-    const currQuestion = useGet(`http://13.233.89.119:3000/dashboard/getquestion/${question_id}`);
+    const currQuestion = useGet(`https://backendinterview-tqxz.onrender.com/dashboard/getquestion/${question_id}`);
     console.log(currQuestion)
     let [currQuestionNo, setCurrQuestionNo] = useRecoilState(currQuestionState);
 
@@ -45,7 +45,7 @@ function QuestionBox({ interview_id, question_id }) {
             "audioUrl":"url",
             "textResponse" : note
         }
-        const response = await fetch('http://13.233.89.119:3000/dashboard/submitresponse', {
+        const response = await fetch('https://backendinterview-tqxz.onrender.com/dashboard/submitresponse', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

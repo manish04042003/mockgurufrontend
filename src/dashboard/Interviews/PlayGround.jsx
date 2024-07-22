@@ -43,7 +43,7 @@ function PlayGround (){
     console.log(currQuestionNo)
     useEffect(()=>{
         const CreateInterview = async () => {
-            const response = await fetch('http://13.233.89.119:3000/dashboard/createinterview', {
+            const response = await fetch('https://backendinterview-tqxz.onrender.com/dashboard/createinterview', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -6,7 +6,7 @@ import { Outlet, Link } from "react-router-dom";
 
 function Home({ text }) {
 
-    let Interviews = useGet('http://13.233.89.119:3000/dashboard/allinterview');
+    let Interviews = useGet('https://backendinterview-tqxz.onrender.com/dashboard/allinterview');
     console.log(Interviews);
     return <>
         {

@@ -18,7 +18,7 @@ function Login() {
   const login = async (e) => {
     e.preventDefault()
     try {
-      const response = await fetch('http://13.233.89.119:3000/login', {
+      const response = await fetch('https://backendinterview-tqxz.onrender.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
